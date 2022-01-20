@@ -26,7 +26,6 @@ body{
 }
 
 button{
-    /*height: 35px;*/
     line-height: 8px;
     color: white;
     padding: 15px;
@@ -37,7 +36,9 @@ button{
     margin-top: 10px;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
 }
+
 .clear{clear: both;}
 /* nav start  */
 nav{
@@ -57,8 +58,8 @@ nav .fa-bars{
     top: 13%;
 }
 nav .info{
-    width: 42%;
-    float:right;
+    /*width: 42%;*/
+    text-align: right;
     font-size: 13px;
 }
 nav .info span{
@@ -67,15 +68,16 @@ nav .info span{
 nav .row{clear: right;
     height: 100%;}
 nav .row>div{
+    vertical-align: center;
     display: inline-block;
 }
-nav .logo h1,nav .logo h1 span{
+nav .logo h1,.menu h1{
     color: white;
     font-size: 42px;
-    margin: 0 auto 6px;
+    margin: 0 auto 5px;
     cursor: pointer;
 }
-nav .logo h1 span{
+nav .logo h1 span,.menu  h1 span{
     display: inline-block;
     position: relative;
     color: black;
@@ -92,7 +94,10 @@ nav .logo h1 span:before{
 nav  .loc{
     text-align: right;
     font-size: 14px;
+    margin-top: -10px;
+    /*margin-bottom: -17%;*/
 }
+nav  .loc >div{display: inline-block}
 nav  .loc h6{
     margin: 3px auto;
     font-size: 13px;
@@ -101,18 +106,20 @@ nav  .loc h6{
 nav .loc a{
     color: black;
 }
-nav .fa-map-marker{
+nav .loc .fa-map-marker{
     height: 60px;
     color: white;
     font-size: 30px;
-    margin:44px 5px 0;
-    vertical-align: top;
+    margin:0 5px ;
     display: inline-block;
 }
+nav .links,nav .join{
+    margin-top: 18px;
+    vertical-align: top}
 nav .links a,.menu a{
     color: white;
     margin:auto 5px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
@@ -144,7 +151,6 @@ nav .links .search input{
     border: none;
     margin-left: 3px;
 }
-
 nav .join{
     text-align: right;
     margin-left: 25px;
@@ -152,25 +158,40 @@ nav .join{
 }
 nav .join a{
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     text-decoration: none;
 }
 nav .join button{
     width: 110px;
-    height: 34px;
+    /*height: 34px;*/
     color: white;
     background: black;
     border-radius: 10px;
-    border: none;
+    font-size: 15px;
     display: block;
     margin-top: 10px;
 }
+nav .join button:hover{
+    background:transparent;
+    color: black;
+    border: 2px solid black;
+}
+nav  .last-loc{display: none}
+nav  .last-loc .fa{font-size: 20px}
+nav  .last-loc h5,
+nav  .last-loc a{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block}
 /* nav end  */
+
+/*menu start*/
 .menu{
     position: absolute;
     width: 220px;
-    padding: 30px 12px 12px;
+    padding: 12px ;
     background: #052a43;
     z-index: 5;
     left: -220px;
@@ -184,13 +205,15 @@ nav .join button{
     top: 7px;
     color: goldenrod;
 }
-.menu .fa{font-size: 24px}
+.menu .fa{font-size: 28px}
 .menu a{
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
+/*menu end*/
+
 /*head start*/
 header{
     background: #104060;
@@ -227,6 +250,11 @@ header a{
     background: gold;
     color: #052a43;
     border-radius: 6px;
+}
+.slider button:hover{
+    background:transparent;
+    color: gold;
+    border: 2px solid gold;
 }
 .slider .text,.slider .discount{
     margin-bottom: 20px;
@@ -322,7 +350,7 @@ header a{
     margin: 40px auto;
 }
 .offers h3{margin-bottom: 4px}
-.offers p{color: #666;}
+.offers p{color: #888;}
 .offers .box{
     width: 30%;
     float: left;
@@ -330,14 +358,19 @@ header a{
     text-align: center;
     overflow: hidden;
 }
+.offers .box .img{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
 .offers .box img{
     cursor: pointer;
-    height: 180px;
+    height: 100%;
     width: 100%;
     transition: all 0.6s ease-in-out;
 }
 .offers .box img:hover{
-    transform: scaleX(1.3);
+    transform: scale(1.3);
 }
 .offers .box h5{margin: 4px auto}
 .offers .box span{
@@ -387,6 +420,7 @@ header a{
     border-radius: 38px;
 
 }
+
 .services button{
     /*width: 120px;*/
     color: black;
@@ -395,6 +429,11 @@ header a{
     margin: 10px auto;
     background: gold;
     border-radius: 38px;
+}
+.services button:not(.img button):hover{
+    background:transparent;
+    color:gold;
+    border: 1px solid gold;
 }
  h2 span{color: gold;}
 
@@ -465,7 +504,6 @@ header a{
     position: relative;
     height: 500px;
     width: 100%;
-    /*margin-top: 80px;*/
     overflow: hidden;
 }
 .phones section{
@@ -536,10 +574,10 @@ header a{
 .phones .text >p:first-child{
     font-weight: 600;
     font-size: 19px;
+    line-height: 25px;
     color: #000;
 }
 .phones #more p{
-    /*margin-top: 18%;*/
     font-size: 20px;
     color: white;
 }
@@ -549,7 +587,6 @@ header a{
     left: 20%;}
 .phones .app{
     padding:0 10px;
-    /*height: 50px;*/
     margin: 10px;
     border-radius: 5px;
     background: white;
@@ -568,9 +605,15 @@ header a{
     margin-bottom: 10px;
 }
 .phones button:last-child{
+    display: block;
     font-size: 14px;
     background: #052a43;
     border-radius: 20px;
+}
+.phones button:last-child:hover{
+    background: transparent;
+    color: #24246b;
+    border: 2px solid #24246b;
 }
 .phones .fa{
     color: black;
@@ -615,8 +658,12 @@ footer a,footer .contact span{
 /*footer  end */
 
 /* media */
-@media (max-width: 1160px) {
+@media (max-width: 1230px) {
     nav{padding: 5px 12%;}
+}
+@media (max-width: 1160px) {
+    nav{padding: 5px 10%;}
+    nav .links a{font-size: 15px}
     .slider .center{width: 70%;}
     .choose{width: 60%}
     .offers{width: 80%;}
@@ -628,85 +675,116 @@ footer a,footer .contact span{
     .phones .img{width: 40%}
     /*.phones #more{margin-top: 50px;}*/
 }
-@media (max-width: 970px) {
+@media (max-width: 1050px){
+    .register >div:first-child{padding-left: 7%;}
+    .register >div:last-child{padding-right: 7%;}
+    }
+    @media (max-width: 970px) {
     nav{padding: 5px 8%;}
+    nav .links{width: 55%}
+    nav .links a{
+        font-size: 13px;
+        margin-right: 2px;
+    }
+    .slider .center{width: 82%;}
     .offers{width: 80%;}
     .services{ padding:30px 1% ;}
     .services .box{
         margin:15px 2%;
         max-width:35% }
-    .register >div:first-child{padding-left: 6%;}
-    .register >div:last-child{padding-right: 6%;}
+    .register >div:first-child{padding-left: 4%;}
+    .register >div:last-child{padding-right: 4%;}
     .phones:after{
         transform: rotateZ(-17deg);
     }
     .phones .text{width: 55%}
-    .phones .img{width: 35%}
+    .phones .img{width: 42%}
     .phones .img img{transform: scale(1.1)}
-    /*.phones .text >p:last-of-type{margin-top: 36%;}*/
 }
 @media (max-width: 880px) {
-    nav .mid{display: none}
+    nav{height: 110px}
+    nav .row .join,nav .mid{display: none}
     nav .fa-bars{display: inline-block}
     .slider .center{width: 80%;}
     .choose{width: 70%;}
     .offers{width: 85%;}
     .register >div:first-child{padding-left: 3%;}
     .register >div:last-child{padding-right: 3%;}
+    .phones:after{transform: rotateZ(-25deg);}
+    .phones section{padding-left: 10%}
     footer >div{margin:10px auto;
         width: 50%;}
     footer .logo{margin-right:18% ;}
-    .phones:after{transform: rotateZ(-25deg);}
 }
 @media (max-width: 840px) {
+    .register >div:first-child,
+    .register >div:last-child{padding-right: 1%;}
     .phones:after{transform: rotateZ(-28deg);}
 }
 @media (max-width: 780px) {
     nav .fa-bars{left: 2%;}
+    slider .center{width: 80%;}
+    .slider .discount{
+        /*transform: scale(1);*/
+        margin-left: 16%}
     .offers .box{width: 47%;}
     .register >div{
         padding: 40px 10%;
         width: 100%;
         display: block}
     .register .img{vertical-align: bottom;}
+    .register >div:first-child,.register >div:last-child{
+        padding-right:10px;
+        padding-left: 5%;}
+    .phones .img img{transform: scaleY(0.95)}
+    .phones:after{transform: rotateZ(-60deg);}
     footer{padding-right: 5%;}
-    .phones .text{width: 65%}
-    .phones .img{width: 33%}
-    .phones .img img{transform: scaleY(0.9)}
-    .phones:after{transform: rotateZ(-50deg);}
 }
 @media (max-width: 735px) {
-    slider .center{width: 80%;}
-    .slider .discount{margin-left: 16%}
-    /*footer{padding:40px 5%;}*/
+    nav .info{display: none}
+    header a{font-size: 14px}
+    .slider .center{width: 86%;}
+    .slider .discount{margin-left: 10%}
+    .choose h2{font-size: 19px}
+    .phones:after{transform: rotateZ(-200deg);}
+    .phones .text >p:first-child{font-size: 16px}
+    .phones .app{display: block}
+    .phones:before{
+        bottom: 35%;
+        transform: scale(1.25);
+        width: 100%}
+    .phones:after{content: none;}
+
     footer >div,footer .logo,footer .contact{
         width: 80%;
         display: block;
         text-align: left;
         margin: auto;
+
     }
     footer  a{
         margin: 5px 15px 0 5px;
         display: inline-block
     }
-    .phones:after{transform: rotateZ(-200deg);}
-    .phones .text >p:first-child{font-size: 16px}
-    .phones .app{display: block}
 }
 @media (max-width: 670px) {
-    nav .fa-bars{top: 11%;}
-    nav .row>div{display: block;}
-    nav .row .join,nav .logo .loc,nav .small{display: none}
+    nav{height: auto}
+    nav  .last-loc{
+        margin-top:-15px;
+        margin-bottom: 0;
+        display: block}
+    nav .logo .loc{display: none}
+    nav .fa-bars{top: 9%;}
     nav .logo h1{margin-bottom: 0}
     nav .links
     {
         width: 75%;
-        margin:-15px auto 0;
+        margin:-20px auto 0;
     }
-    header a{font-size: 14px}
+    header a{font-size: 13px}
     .slider .center{width: 90%;}
     .slider .discount{
-        transform: scale(0.8);
+        transform: scale(0.8) rotateZ(-4deg);
         margin-left: 4%;
     }
     .choose{width: 80%;}
@@ -719,15 +797,16 @@ footer a,footer .contact span{
         height: 80px;}
     .why .icon .fa{font-size: 40px}
     .phones:after{transform: rotateZ(-280deg);}
-    .phones .text >p:first-child{font-size: 15px}
-    .phone .more p{font-size: 16px}
+    .phones .text >p:first-child,.phone #more p{font-size: 15px}
+    footer{padding: 40px 10%;}
 }
 @media (max-width: 580px){
     header {display: none;}
     .slider .discount{
-        transform: scale(0.6);
+        transform: scale(0.7) rotateZ(-5deg);
         margin-left:0;
     }
+    .slider .text p{font-size: 14px}
     .choose{width: 90%;}
     .choose h2{font-size: 18px}
     .choose span{font-size: 13px}
@@ -736,9 +815,38 @@ footer a,footer .contact span{
         float: none;
         width: 70%;
     }
+    .why h4{font-size: 13px}
     .phones:after{transform: rotateZ(-300deg);}
+    .phones .text >p:first-child{font-size: 14px}
+    .phones .img img{
+        margin-top: 100px;
+        height: 300px}
+    .phones #more p{font-size: 15px}
+    footer{padding: 40px 8%;}
 }
 @media (max-width: 555px){
+    .services h4{font-size: 15px}
+    .services .box span{font-size: 13px}
+    .register h3{font-size: 16px}
+    .register p{font-size: 15px}
     .phones .bottom{height: 48%}
     footer  a{margin-right: 5px;}
+}
+@media (max-width: 500px){
+    .slider .text{width: 35%}
+    .slider .text p{font-weight: normal}
+    .choose .icon{
+        width: 40px;
+        height: 40px;}
+    .choose h2{font-size: 16px}
+    .choose .fa{font-size: 19px}
+    .choose span{font-size: 11px}
+    .services .box .img{height: 110px}
+    .services h4{
+        font-weight: 550;
+        font-size: 14px}
+    .why h4,.why p{font-size: 12px}
+    .phones .app{transform: scale(0.9)}
+    footer{padding: 40px 2%;}
+    footer  a,footer .contact span{font-size: 14px}
 }
