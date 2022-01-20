@@ -82,14 +82,13 @@ nav .logo h1 span,.menu  h1 span{
     position: relative;
     color: black;
 }
-nav .logo h1 span:before{
+nav .logo h1 span:before,.menu  h1 span:before{
     position: absolute;
     content: "";
-    left: 48%;
-    top: 14%;
+    left: 46.6%;
+    top: 16%;
     border: 3.7px white solid;
     border-radius: 50%;
-
 }
 nav  .loc{
     text-align: right;
@@ -736,7 +735,9 @@ footer a,footer .contact span{
     .register >div:first-child,.register >div:last-child{
         padding-right:10px;
         padding-left: 5%;}
-    .phones .img img{transform: scaleY(0.95)}
+    .phones .img img{
+        margin-top: 8px;
+        transform: scaleY(0.95)}
     .phones:after{transform: rotateZ(-60deg);}
     footer{padding-right: 5%;}
 }
