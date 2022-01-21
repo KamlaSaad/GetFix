@@ -37,6 +37,7 @@ button{
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
 }
 
@@ -117,19 +118,21 @@ nav .links,nav .join{
     margin-top: 18px;
     vertical-align: top}
 nav .links a,.menu a{
-    color: white;
+    color: #f3f3f3;
     margin:auto 5px;
     font-weight: 500;
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
 }
+
 nav .links .last a{
     font-weight:normal;
     font-size: 13px;
     margin-bottom: 5px;
     text-decoration: underline;
 }
+nav .links a:hover,.menu a:hover{color: white}
 nav .links a.active,.menu a.active{
     font-weight: 600;
     color: black}
@@ -333,11 +336,13 @@ header a{
     font-size: 13px;
 }
 .choose .icon{
-    width: 48px;
-    height: 48px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    /*padding: 13px;*/
 }
-.choose .fa{font-size: 24px}
+.choose .fa{
+    margin: 27%;
+    font-size: 24px}
 .choose .active{
     color: black;
     background: gold;
@@ -875,5 +880,3 @@ footer a,footer .contact span{
     footer{padding: 40px 2%;}
     footer  a,footer .contact span{font-size: 14px}
 }
-
- 
