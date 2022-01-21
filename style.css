@@ -37,6 +37,7 @@ button{
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .clear{clear: both;}
@@ -82,14 +83,13 @@ nav .logo h1 span,.menu  h1 span{
     position: relative;
     color: black;
 }
-nav .logo h1 span:before{
+nav .logo h1 span:before,.menu  h1 span:before{
     position: absolute;
     content: "";
-    left: 48%;
-    top: 14%;
+    left: 46.6%;
+    top: 16%;
     border: 3.7px white solid;
     border-radius: 50%;
-
 }
 nav  .loc{
     text-align: right;
@@ -147,6 +147,7 @@ nav .links .search .fa{
     display: inline-block;
 }
 nav .links .search input{
+    width: 90%;
     outline: none;
     border: none;
     margin-left: 3px;
@@ -164,7 +165,6 @@ nav .join a{
 }
 nav .join button{
     width: 110px;
-    /*height: 34px;*/
     color: white;
     background: black;
     border-radius: 10px;
@@ -175,7 +175,7 @@ nav .join button{
 nav .join button:hover{
     background:transparent;
     color: black;
-    border: 2px solid black;
+    border-color: black;
 }
 nav  .last-loc{display: none}
 nav  .last-loc .fa{font-size: 20px}
@@ -254,7 +254,7 @@ header a{
 .slider button:hover{
     background:transparent;
     color: gold;
-    border: 2px solid gold;
+    border-color:gold;
 }
 .slider .text,.slider .discount{
     margin-bottom: 20px;
@@ -433,7 +433,7 @@ header a{
 .services button:not(.img button):hover{
     background:transparent;
     color:gold;
-    border: 1px solid gold;
+    border-color: gold;
 }
  h2 span{color: gold;}
 
@@ -443,7 +443,9 @@ header a{
 .register{display: table-cell}
 .register >div{
     width: 50%;
-    padding: 76px 5%;
+    padding: 76px 3%;
+    font-size: 14px;
+    line-height: 24px;
     display: table-cell;
 }
 
@@ -456,7 +458,7 @@ header a{
     background: gold;
     padding-right:13%;
 }
-.register h3{margin-bottom: 3px}
+.register h3{margin-bottom: 2px}
 .register >div:first-child h3{color: gold}
 .register img{
     width: 110px;
@@ -466,14 +468,15 @@ header a{
     border-radius: 50%;
 }
 .register .box div{
-    width: 50%;
+    width: 60%;
     display: inline-block;
 }
+.register p{margin-top: 0}
 /*register end */
 /*why start*/
 .why{
     width: 70%;
-    margin: 60px auto;
+    margin: 60px auto 0;
     text-align: center;
 }
 .why .flex >div{
@@ -500,64 +503,67 @@ header a{
 /*why  end */
 
 /* phones  start */
-.phones {
+.phones{
     position: relative;
-    height: 500px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
+    background: url("imgs/waveBack.jpg");
+    background-size: cover;
 }
 .phones section{
     width: 100%;
     height: 100%;
-    padding: 35px 5%  70px 20%;
+    padding: 35px 2%  15px 20%;
 }
-.phones .bottom {
-    bottom:0;
-    left:0;
-    height: 50%;
-    width: 100%;
-    z-index: -2;
-    background: gold;
-    position: absolute;
-}
-.phones .bottom:before{
-    left: 0;
-    top: -40%;
-    height: 40%;
-    width: 15%;
-    content: "";
-    background: gold;
-    position: absolute;
-}
-.phones:before{
-    content: "";
-    background: white;
-    position: absolute;
-    border-radius: 50%;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    bottom: 25%;
-    z-index: -1;
-}
-.phones:after{
-    z-index: -1;
-    right:-18%;
-    top:25%;
-    width: 70%;
-    height: 100%;
-    content: "";
-    background: gold;
-    position: absolute;
-    border-radius: 50%;
-    transform: rotateZ(-8deg);
-}
+/*.phones .bottom {*/
+/*    bottom:0;*/
+/*    left:0;*/
+/*    height: 50%;*/
+/*    width: 100%;*/
+/*    z-index: -2;*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*}*/
+/*.phones .bottom:before{*/
+/*    left: 0;*/
+/*    top: -40%;*/
+/*    height: 40%;*/
+/*    width: 15%;*/
+/*    content: "";*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*}*/
+/*.phones:before{*/
+/*    content: "";*/
+/*    background: white;*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    width: 60%;*/
+/*    height: 100%;*/
+/*    left: 0;*/
+/*    bottom: 25%;*/
+/*    z-index: -1;*/
+/*}*/
+/*.phones:after{*/
+/*    z-index: -1;*/
+/*    right:-18%;*/
+/*    top:25%;*/
+/*    width: 70%;*/
+/*    height: 100%;*/
+/*    content: "";*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    transform: rotateZ(-8deg);*/
+/*}*/
 .phones .text,.phones .img{
-    margin-bottom: 20px;
     text-align: right;
     vertical-align: top;
     display: inline-block;
+    margin-top: 70px
 }
+/*.phones .img{margin-top: 100px}*/
 .phones .text {
     width: 60%;
     padding-top: 10%;
@@ -569,9 +575,10 @@ header a{
     height:  400px;
     max-width: 100%;
     display: block;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
-.phones .text >p:first-child{
+.phones  #fp{
+    width: 80%;
     font-weight: 600;
     font-size: 19px;
     line-height: 25px;
@@ -613,7 +620,7 @@ header a{
 .phones button:last-child:hover{
     background: transparent;
     color: #24246b;
-    border: 2px solid #24246b;
+    border-color: #24246b;
 }
 .phones .fa{
     color: black;
@@ -673,13 +680,18 @@ footer a,footer .contact span{
     }
     .phones .text{width: 55%}
     .phones .img{width: 40%}
-    /*.phones #more{margin-top: 50px;}*/
 }
-@media (max-width: 1050px){
-    .register >div:first-child{padding-left: 7%;}
-    .register >div:last-child{padding-right: 7%;}
+@media (max-width: 1050px) {
+    .register > div:first-child {
+        padding-left: 7%;
     }
-    @media (max-width: 970px) {
+    .register > div:last-child {
+        padding-right: 7%;
+    }
+    .phones .text{width: 55%}
+    .phones .img{width: 42%}
+}
+@media (max-width: 970px) {
     nav{padding: 5px 8%;}
     nav .links{width: 55%}
     nav .links a{
@@ -699,6 +711,7 @@ footer a,footer .contact span{
     }
     .phones .text{width: 55%}
     .phones .img{width: 42%}
+    .phones section{padding-left: 13%}
     .phones .img img{transform: scale(1.1)}
 }
 @media (max-width: 880px) {
@@ -724,9 +737,7 @@ footer a,footer .contact span{
 @media (max-width: 780px) {
     nav .fa-bars{left: 2%;}
     slider .center{width: 80%;}
-    .slider .discount{
-        /*transform: scale(1);*/
-        margin-left: 16%}
+    .slider .discount{margin-left: 16%}
     .offers .box{width: 47%;}
     .register >div{
         padding: 40px 10%;
@@ -736,8 +747,14 @@ footer a,footer .contact span{
     .register >div:first-child,.register >div:last-child{
         padding-right:10px;
         padding-left: 5%;}
-    .phones .img img{transform: scaleY(0.95)}
+    .phones .img img{
+        margin-top: 8px;
+        transform: scaleY(0.95)}
+    .register .box div{vertical-align: top;}
     .phones:after{transform: rotateZ(-60deg);}
+    .phones #fp{
+        font-weight: 550;
+        font-size: 15px}
     footer{padding-right: 5%;}
 }
 @media (max-width: 735px) {
@@ -747,7 +764,6 @@ footer a,footer .contact span{
     .slider .discount{margin-left: 10%}
     .choose h2{font-size: 19px}
     .phones:after{transform: rotateZ(-200deg);}
-    .phones .text >p:first-child{font-size: 16px}
     .phones .app{display: block}
     .phones:before{
         bottom: 35%;
@@ -790,6 +806,7 @@ footer a,footer .contact span{
     .choose{width: 80%;}
     .choose h2{font-size: 20px}
     .services .box{margin:15px 1%;}
+    .register img{margin-bottom: -30px}
     .why .flex {flex: none;}
     .why .icon{
         font-size: 14px;
@@ -797,7 +814,7 @@ footer a,footer .contact span{
         height: 80px;}
     .why .icon .fa{font-size: 40px}
     .phones:after{transform: rotateZ(-280deg);}
-    .phones .text >p:first-child,.phone #more p{font-size: 15px}
+    .phones #fp{font-weight: 500;}
     footer{padding: 40px 10%;}
 }
 @media (max-width: 580px){
@@ -815,20 +832,26 @@ footer a,footer .contact span{
         float: none;
         width: 70%;
     }
+    .register .box div{vertical-align: center;}
     .why h4{font-size: 13px}
     .phones:after{transform: rotateZ(-300deg);}
-    .phones .text >p:first-child{font-size: 14px}
     .phones .img img{
         margin-top: 100px;
         height: 300px}
+    .phones  #fp{width: 95%;}
     .phones #more p{font-size: 15px}
+    .phones .app{
+        margin-bottom: 0;
+        transform: scale(0.9)}
     footer{padding: 40px 8%;}
 }
 @media (max-width: 555px){
+    nav .links .search input{width: 80%}
     .services h4{font-size: 15px}
     .services .box span{font-size: 13px}
     .register h3{font-size: 16px}
-    .register p{font-size: 15px}
+    .phones #fp{font-size: 13px}
+    .register img{margin-top: 15px}
     .phones .bottom{height: 48%}
     footer  a{margin-right: 5px;}
 }
@@ -846,7 +869,7 @@ footer a,footer .contact span{
         font-weight: 550;
         font-size: 14px}
     .why h4,.why p{font-size: 12px}
-    .phones .app{transform: scale(0.9)}
+    .phones .app{transform: scale(0.8)}
     footer{padding: 40px 2%;}
     footer  a,footer .contact span{font-size: 14px}
 }
