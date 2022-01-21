@@ -860,14 +860,16 @@ footer a,footer .contact span{
     .slider .text p{font-weight: normal}
     .choose .icon{
         width: 40px;
-        height: 40px;}
+        height: 40px;
+    }
     .choose h2{font-size: 16px}
     .choose .fa{font-size: 19px}
     .choose span{font-size: 11px}
     .services .box .img{height: 110px}
     .services h4{
         font-weight: 550;
-        font-size: 14px}
+        font-size: 14px
+    }
     .why h4,.why p{font-size: 12px}
     .phones .app{transform: scale(0.8)}
     footer{padding: 40px 2%;}
