@@ -518,13 +518,8 @@ header a{
     height: 600px;
     width: 100%;
     overflow: hidden;
-<<<<<<< HEAD
     background: url("imgs/back.jpg");
     background-size: 100% 100%;
-=======
-    background: url("imgs/waveBack.jpg");
-    background-size: cover;
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 }
 .phones section{
     width: 100%;
@@ -534,7 +529,6 @@ header a{
 /*.phones .bottom {*/
 /*    bottom:0;*/
 /*    left:0;*/
-<<<<<<< HEAD
 /*    height: 43%;*/
 /*    width: 100%;*/
 /*    z-index: -3;*/
@@ -591,29 +585,18 @@ header a{
 /*    height: 37%;*/
 /*    width: 100%;*/
 /*    z-index: -3;*/
-=======
-/*    height: 50%;*/
-/*    width: 100%;*/
-/*    z-index: -2;*/
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 /*    background: gold;*/
 /*    position: absolute;*/
 /*}*/
 /*.phones .bottom:before{*/
 /*    left: 0;*/
-<<<<<<< HEAD
 /*    top: -75%;*/
 /*    height: 75%;*/
-=======
-/*    top: -40%;*/
-/*    height: 40%;*/
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 /*    width: 15%;*/
 /*    content: "";*/
 /*    background: gold;*/
 /*    position: absolute;*/
 /*}*/
-<<<<<<< HEAD
 /*.phones .top{*/
 /*    !*z-index: 1;*!*/
 /*    left: 43%;*/
@@ -625,14 +608,11 @@ header a{
 /*    position: absolute;*/
 /*    transform: rotateZ(-27.8deg);*/
 /*}*/
-=======
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 /*.phones:before{*/
 /*    content: "";*/
 /*    background: white;*/
 /*    position: absolute;*/
 /*    border-radius: 50%;*/
-<<<<<<< HEAD
 /*    width: 58%;*/
 /*    height: 56%;*/
 /*    left: 0;*/
@@ -646,29 +626,11 @@ header a{
 /*    top:34%;*/
 /*    width: 60%;*/
 /*    height: 60%;*/
-=======
-/*    width: 60%;*/
-/*    height: 100%;*/
-/*    left: 0;*/
-/*    bottom: 25%;*/
-/*    z-index: -1;*/
-/*}*/
-/*.phones:after{*/
-/*    z-index: -1;*/
-/*    right:-18%;*/
-/*    top:25%;*/
-/*    width: 70%;*/
-/*    height: 100%;*/
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 /*    content: "";*/
 /*    background: gold;*/
 /*    position: absolute;*/
 /*    border-radius: 50%;*/
-<<<<<<< HEAD
 /*    transform: rotateZ(-5.5deg);*/
-=======
-/*    transform: rotateZ(-8deg);*/
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
 /*}*/
 .phones .text,.phones .img{
     text-align: right;
@@ -794,7 +756,6 @@ footer a,footer .contact span{
     .phones .img{width: 40%}
 }
 @media (max-width: 1050px) {
-<<<<<<< HEAD
     .slider .center{width: 60%;}
     .register > div:first-child {
         padding-left: 7%;
@@ -802,14 +763,6 @@ footer a,footer .contact span{
     .register > div:last-child {
         padding-right: 7%;
     }
-=======
-    .register > div:first-child {
-        padding-left: 7%;
-    }
-    .register > div:last-child {
-        padding-right: 7%;
-    }
->>>>>>> 3c004e2275804b021060da3aa78c40325fccab7d
     .phones .text{width: 55%}
     .phones .img{width: 42%}
 }
