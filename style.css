@@ -243,9 +243,10 @@ header a{
 .slider p{
     line-height: 27px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
 }
+
 .slider p:last-of-type{
     line-height: 20px;
     color: gold}
@@ -260,10 +261,13 @@ header a{
     border-color:gold;
 }
 .slider .text,.slider .discount{
+    width: 30%;
     margin-bottom: 20px;
     display: inline-block;
 }
-.slider .text{text-align: left}
+/*.slider .text{*/
+/*    width: 50%;*/
+/*    text-align: left}*/
 .slider .discount{
     z-index: 2;
     width: 250px;
@@ -303,6 +307,7 @@ header a{
     margin-right: -30%
 }
 .slider .bullets{
+    margin-top: 12px;
     text-align: center;
 }
 .slider .bullets span{
@@ -741,7 +746,6 @@ footer a,footer .contact span{
 @media (max-width: 1160px) {
     nav{padding: 5px 10%;}
     nav .links a{font-size: 15px}
-    .slider .center{width: 70%;}
     .choose{width: 60%}
     .offers{width: 80%;}
     .services{ padding:30px 4% ;}
@@ -752,6 +756,7 @@ footer a,footer .contact span{
     .phones .img{width: 40%}
 }
 @media (max-width: 1050px) {
+    .slider .center{width: 60%;}
     .register > div:first-child {
         padding-left: 7%;
     }
@@ -768,7 +773,7 @@ footer a,footer .contact span{
         font-size: 13px;
         margin-right: 2px;
     }
-    .slider .center{width: 82%;}
+    .slider .center{width: 70%;}
     .offers{width: 80%;}
     .services{ padding:30px 1% ;}
     .services .box{
@@ -788,7 +793,7 @@ footer a,footer .contact span{
     nav{height: 110px}
     nav .row .join,nav .mid{display: none}
     nav .fa-bars{display: inline-block}
-    .slider .center{width: 80%;}
+    .slider .center{width: 75%;}
     .choose{width: 70%;}
     .offers{width: 85%;}
     .register >div:first-child{padding-left: 3%;}
