@@ -37,6 +37,7 @@ button{
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
     border: 2px solid transparent;
 }
 
@@ -117,19 +118,21 @@ nav .links,nav .join{
     margin-top: 18px;
     vertical-align: top}
 nav .links a,.menu a{
-    color: white;
+    color: #f3f3f3;
     margin:auto 5px;
     font-weight: 500;
     font-size: 14px;
     display: inline-block;
     text-decoration: none;
 }
+
 nav .links .last a{
     font-weight:normal;
     font-size: 13px;
     margin-bottom: 5px;
     text-decoration: underline;
 }
+nav .links a:hover,.menu a:hover{color: white}
 nav .links a.active,.menu a.active{
     font-weight: 600;
     color: black}
@@ -333,11 +336,13 @@ header a{
     font-size: 13px;
 }
 .choose .icon{
-    width: 48px;
-    height: 48px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    /*padding: 13px;*/
 }
-.choose .fa{font-size: 24px}
+.choose .fa{
+    margin: 27%;
+    font-size: 24px}
 .choose .active{
     color: black;
     background: gold;
@@ -508,8 +513,8 @@ header a{
     height: 600px;
     width: 100%;
     overflow: hidden;
-    background: url("imgs/waveBack.jpg");
-    background-size: cover;
+    background: url("imgs/back.jpg");
+    background-size: 100% 100%;
 }
 .phones section{
     width: 100%;
@@ -519,43 +524,108 @@ header a{
 /*.phones .bottom {*/
 /*    bottom:0;*/
 /*    left:0;*/
-/*    height: 50%;*/
+/*    height: 43%;*/
 /*    width: 100%;*/
-/*    z-index: -2;*/
+/*    z-index: -3;*/
 /*    background: gold;*/
 /*    position: absolute;*/
 /*}*/
 /*.phones .bottom:before{*/
 /*    left: 0;*/
-/*    top: -40%;*/
-/*    height: 40%;*/
+/*    top: -75%;*/
+/*    height: 75%;*/
 /*    width: 15%;*/
 /*    content: "";*/
 /*    background: gold;*/
 /*    position: absolute;*/
+/*}*/
+/*.phones .top{*/
+/*    !*z-index: 1;*!*/
+/*    right: 25%;*/
+/*    top:51.6%;*/
+/*    height: 15%;*/
+/*    width: 28%;*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*    transform: rotateZ(-27.8deg);*/
+/*}*/
+/*.phones:before {*/
+/*    content: "";*/
+/*    background: white;*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    width: 65%;*/
+/*    height: 70%;*/
+/*    left: -1%;*/
+/*    bottom: 35%;*/
+/*    z-index: -2;*/
+/*    transform: rotateZ(5deg);*/
+/*}*/
+/*.phones:after{*/
+/*    z-index: -1;*/
+/*    right:-5%;*/
+/*    top:30%;*/
+/*    width: 40.2%;*/
+/*    height: 65%;*/
+/*    content: "";*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*    border-radius: 50%;*/
+/*    transform: rotateZ(-5deg);*/
+/*}*/
+
+/*.phones .bottom {*/
+/*    bottom:0;*/
+/*    left:0;*/
+/*    height: 37%;*/
+/*    width: 100%;*/
+/*    z-index: -3;*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*}*/
+/*.phones .bottom:before{*/
+/*    left: 0;*/
+/*    top: -75%;*/
+/*    height: 75%;*/
+/*    width: 15%;*/
+/*    content: "";*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*}*/
+/*.phones .top{*/
+/*    !*z-index: 1;*!*/
+/*    left: 43%;*/
+/*    top:52.4%;*/
+/*    height: 5%;*/
+/*    width: 17%;*/
+/*    content: "";*/
+/*    background: gold;*/
+/*    position: absolute;*/
+/*    transform: rotateZ(-27.8deg);*/
 /*}*/
 /*.phones:before{*/
 /*    content: "";*/
 /*    background: white;*/
 /*    position: absolute;*/
 /*    border-radius: 50%;*/
-/*    width: 60%;*/
-/*    height: 100%;*/
+/*    width: 58%;*/
+/*    height: 56%;*/
 /*    left: 0;*/
-/*    bottom: 25%;*/
-/*    z-index: -1;*/
+/*    bottom: 35%;*/
+/*    z-index: -2;*/
+/*    transform: rotateZ(-1deg);*/
 /*}*/
 /*.phones:after{*/
 /*    z-index: -1;*/
-/*    right:-18%;*/
-/*    top:25%;*/
-/*    width: 70%;*/
-/*    height: 100%;*/
+/*    right:-8%;*/
+/*    top:34%;*/
+/*    width: 60%;*/
+/*    height: 60%;*/
 /*    content: "";*/
 /*    background: gold;*/
 /*    position: absolute;*/
 /*    border-radius: 50%;*/
-/*    transform: rotateZ(-8deg);*/
+/*    transform: rotateZ(-5.5deg);*/
 /*}*/
 .phones .text,.phones .img{
     text-align: right;
@@ -590,7 +660,7 @@ header a{
 }
 .phones #more{
     position: absolute;
-    bottom: 10px;
+    bottom: 5%;
     left: 20%;}
 .phones .app{
     padding:0 10px;

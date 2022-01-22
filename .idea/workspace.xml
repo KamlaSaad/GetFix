@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f101774f-d297-45ae-9fa2-0f84e1ac1aaf" name="Default Changelist" comment="updated some elements style" />
+    <list default="true" id="f101774f-d297-45ae-9fa2-0f84e1ac1aaf" name="Default Changelist" comment="updated some elements style">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +71,9 @@
       <workItem from="1642530484851" duration="30935000" />
       <workItem from="1642564413887" duration="7747000" />
       <workItem from="1642617915499" duration="2552000" />
-      <workItem from="1642699900215" duration="15559000" />
+      <workItem from="1642699900215" duration="27943000" />
+      <workItem from="1642738651950" duration="986000" />
+      <workItem from="1642789275456" duration="21042000" />
     </task>
     <task id="LOCAL-00001" summary="updated some elements style">
       <created>1642715053327</created>
@@ -92,6 +98,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated some elements style" />
