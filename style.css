@@ -8,7 +8,9 @@ body{
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-evenly;
 }
 .icon{
     width: 40px;
@@ -337,17 +339,17 @@ header a{
     text-align: center;
     margin: 4px auto 8px}
 .choose .flex> div{
-    width: 45px;
+    width: 55px;
     font-size: 13px;
 }
 .choose .icon{
     width: 50px;
     height: 50px;
-    /*padding: 13px;*/
+    text-align: center;
 }
 .choose .fa{
-    margin: 27%;
-    font-size: 24px}
+    margin-top: 10px;
+    font-size: 26px}
 .choose .active{
     color: black;
     background: gold;
@@ -483,13 +485,16 @@ header a{
 }
 .register p{margin-top: 0}
 /*register end */
+
 /*why start*/
 .why{
     width: 70%;
     margin: 60px auto 0;
     text-align: center;
 }
+.why .flex{flex-wrap: nowrap}
 .why .flex >div{
+    /*max-width: 30%;*/
     margin:auto 2% ;
 }
 .why .icon{
@@ -519,6 +524,7 @@ header a{
     width: 100%;
     overflow: hidden;
     background: url("imgs/back.jpg");
+    background-position: center;
     background-size: 100% 100%;
 }
 .phones section{
@@ -673,7 +679,7 @@ header a{
     border-radius: 5px;
     background: white;
     display: inline-block;
-    box-shadow: 3px 3px 3px 2px #eee;
+    box-shadow: 0px 0px  8px 8px #f5f1f1;
 }
 .phones .text .app p{
     color: black;
@@ -712,14 +718,14 @@ footer >div{
     display: inline-block;
     vertical-align:top;
     margin:5px ;
-    width: 16%;
+    width: 15%;
     color: white;
 }
-footer >div:not(footer .logo){padding-top: 25px}
-footer .contact{width: 22%}
+footer >div:not(footer .logo){padding-top: 30px}
+footer .contact{width: 25%}
 footer .logo{
     width: 30%;
-    margin-right: 30px;
+    margin-right: 5%;
     font-size: 15px;
 }
 footer .logo h2,footer .logo h2 span{
@@ -789,6 +795,9 @@ footer a,footer .contact span{
     .phones section{padding-left: 13%}
     .phones .img img{transform: scale(1.1)}
 }
+@media (max-width: 890px) {
+    .phones .app{box-shadow: 0px 0px  2px 2px #ddd;}
+}
 @media (max-width: 880px) {
     nav{height: 110px}
     nav .row .join,nav .mid{display: none}
@@ -800,9 +809,13 @@ footer a,footer .contact span{
     .register >div:last-child{padding-right: 3%;}
     .phones:after{transform: rotateZ(-25deg);}
     .phones section{padding-left: 10%}
-    footer >div{margin:10px auto;
-        width: 50%;}
-    footer .logo{margin-right:18% ;}
+    footer >div{
+        margin:10px auto;
+        width: 40%;}
+    footer .contact{width: 58%;}
+    footer .logo{
+        width: 58%;
+        margin-right:18% ;}
 }
 @media (max-width: 840px) {
     .register >div:first-child,
@@ -846,7 +859,7 @@ footer a,footer .contact span{
         width: 100%}
     .phones:after{content: none;}
 
-    footer >div,footer .logo,footer .contact{
+    footer >div,footer .odd,footer .contact{
         width: 80%;
         display: block;
         text-align: left;
@@ -902,13 +915,24 @@ footer a,footer .contact span{
     .choose{width: 90%;}
     .choose h2{font-size: 18px}
     .choose span{font-size: 13px}
+    .choose .flex>div{
+        flex: calc(90% /4);
+        margin-bottom: 10px;
+    }
+    .choose .flex>div:nth-child(5){
+        margin-left: 7%;
+    }
     .offers .box{
-        margin: 10px auto;
         float: none;
+        margin: 10px 15%;
         width: 70%;
     }
     .register .box div{vertical-align: center;}
+    .why .flex{flex-wrap: wrap}
     .why h4{font-size: 13px}
+    .phones{
+        background-size: auto;
+        background-position: left;}
     .phones:after{transform: rotateZ(-300deg);}
     .phones .img img{
         margin-top: 100px;
@@ -931,14 +955,10 @@ footer a,footer .contact span{
     footer  a{margin-right: 5px;}
 }
 @media (max-width: 500px){
+    nav .logo {margin-left: 8px}
     .slider .text{width: 35%}
     .slider .text p{font-weight: normal}
-    .choose .icon{
-        width: 40px;
-        height: 40px;
-    }
     .choose h2{font-size: 16px}
-    .choose .fa{font-size: 19px}
     .choose span{font-size: 11px}
     .services .box .img{height: 110px}
     .services h4{
@@ -949,4 +969,53 @@ footer a,footer .contact span{
     .phones .app{transform: scale(0.8)}
     footer{padding: 40px 2%;}
     footer  a,footer .contact span{font-size: 14px}
+    footer #copy{font-size: 13px}
+}
+@media (max-width: 435px){
+    /*.choose .flex{flex:none}*/
+    .slider .text{width: 96%}
+    .slider .discount{
+        margin-top: -80px;
+        margin-left: 30%}
+    .services .box {
+        max-width:50%;
+        margin: 12px auto;
+        display: block;}
+    .phones .img img{height: 260px}
+
+}
+@media (max-width: 400px){
+    nav .fa-bars{top: 8%;}
+    nav .links {width: 90%;}
+    .offers .box{
+        margin: 10px 10%;
+        width: 80%;
+    }
+    .register img{
+        width: 100px;
+        height: 100px;}
+    .register p{font-size: 13px}
+    .phones #more{left: 14%}
+    .phones .app{
+        margin: 0;
+        transform: scale(0.7)}
+}
+@media (max-width: 340px){
+    .slider .discount{ transform: scale(0.6) rotateZ(-4deg);}
+    .choose h2{font-size: 15px}
+    .services .box {max-width:60%;}
+    .register img {
+        display: block;
+        margin: 5px auto;
+    }
+    .register .box div{
+        width: 90%;
+        margin: 5px 5%;
+        text-align: center;
+    }
+    .phones #more{left: 10%}
+}
+@media (max-width: 320px){
+    .slider .discount{margin-left: 20%}
+
 }
