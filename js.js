@@ -12,12 +12,12 @@ menuIcon.onclick=function(){
 close.onclick=function(){
    menu.style.left="-220px";
 }
-window.onload=function(){
-    if(screen.width<=320){
-      console.log(screen.width);
-      console.log("meta"+meta.getAttribute("name"));
-      meta.setAttribute("name","");
-      meta.setAttribute("content","");
-      console.log("meta"+meta.getAttribute("name"));
-    }
-}
+//window.onload=function(){
+//    if(screen.width<=320){
+//      console.log(screen.width);
+//      console.log("meta"+meta.getAttribute("name"));
+//      meta.setAttribute("name","");
+//      meta.setAttribute("content","");
+//      console.log("meta"+meta.getAttribute("name"));
+//    }
+//}
