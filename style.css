@@ -152,7 +152,7 @@ nav .links .search .fa{
     display: inline-block;
 }
 nav .links .search input{
-    width: 90%;
+    width: 80%;
     outline: none;
     border: none;
     margin-left: 3px;
@@ -1001,7 +1001,7 @@ footer a,footer .contact span{
         transform: scale(0.7)}
 }
 @media (max-width: 340px){
-    .slider .discount{ transform: scale(0.6) rotateZ(-4deg);}
+    .slider .discount{ transform: scale(0.55) rotateZ(-4deg);}
     .choose h2{font-size: 15px}
     .services .box {max-width:60%;}
     .register img {
