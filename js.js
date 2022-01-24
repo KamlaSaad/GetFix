@@ -6,18 +6,10 @@
 menuIcon.onclick=function(){
    var left=menu.style.left;
    console.log("left"+ left);
-   if(left=="-220px"){menu.style.left="0";
-   }else{menu.style.left="-220px"}
+   console.log("back "+menu.style.background);
+   if(left.trim()=="0"){menu.style.left="-220px";
+   }else{menu.style.left="0"}
 }
 close.onclick=function(){
    menu.style.left="-220px";
 }
-//window.onload=function(){
-//    if(screen.width<=320){
-//      console.log(screen.width);
-//      console.log("meta"+meta.getAttribute("name"));
-//      meta.setAttribute("name","");
-//      meta.setAttribute("content","");
-//      console.log("meta"+meta.getAttribute("name"));
-//    }
-//}
