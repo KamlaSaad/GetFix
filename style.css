@@ -818,6 +818,7 @@ footer a,footer .contact span{
         margin-right:18% ;}
 }
 @media (max-width: 840px) {
+    .slider .discount{transform: scale(0.9) rotateZ(-4deg);}
     .register >div:first-child,
     .register >div:last-child{padding-right: 1%;}
     .phones:after{transform: rotateZ(-28deg);}
@@ -849,7 +850,9 @@ footer a,footer .contact span{
     nav .info{display: none}
     header a{font-size: 14px}
     .slider .center{width: 86%;}
-    .slider .discount{margin-left: 10%}
+    .slider .discount{
+        transform: scale(0.8) rotateZ(-4deg);
+        margin-left: 10%}
     .choose h2{font-size: 19px}
     .phones:after{transform: rotateZ(-200deg);}
     .phones .app{display: block}
