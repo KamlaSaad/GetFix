@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
+    overflow-x: scroll;
     font-family: sans-serif;
 }
 .flex{
@@ -48,7 +49,7 @@ button{
 nav{
     width: 100%;
     background: gold;
-    padding: 5px 18%;
+    padding: 10px 18%;
     position: relative;
 
 }
@@ -59,7 +60,7 @@ nav .fa-bars{
     font-size: 26px;
     display: none;
     left: 4%;
-    top: 13%;
+    top: 26%;
 }
 nav .info{
     /*width: 42%;*/
@@ -131,6 +132,7 @@ nav .links a,.menu a{
 nav .links .last a{
     font-weight:normal;
     font-size: 13px;
+    cursor: pointer;
     margin-bottom: 5px;
     text-decoration: underline;
 }
@@ -149,7 +151,7 @@ nav .links .search{
 }
 nav .links .search .fa{
     margin-left: 10px;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 nav .links .search input{
     width: 80%;
@@ -186,6 +188,7 @@ nav  .last-loc{display: none}
 nav  .last-loc .fa{font-size: 20px}
 nav  .last-loc h5,
 nav  .last-loc a{
+    margin-bottom: 3px;
     color: black;
     font-weight: 400;
     font-size: 14px;
@@ -195,7 +198,9 @@ nav  .last-loc a{
 /*menu start*/
 .menu{
     position: absolute;
+    position: fixed;
     width: 220px;
+    height: 100%;
     padding: 12px ;
     background: #052a43;
     z-index: 5;
@@ -210,13 +215,13 @@ nav  .last-loc a{
     top: 7px;
     color: goldenrod;
 }
-.menu .fa{font-size: 28px}
+.menu .fa{font-size: 22px}
 .menu a{
     display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
+    font-weight: 450;
     margin-bottom: 16px;
 }
+.menu a.active{font-size: 17px;}
 /*menu end*/
 
 /*head start*/
@@ -847,7 +852,7 @@ footer a,footer .contact span{
     footer{padding-right: 5%;}
 }
 @media (max-width: 735px) {
-    nav .info{display: none}
+    /*nav .info{display: none}*/
     header a{font-size: 14px}
     .slider .center{width: 86%;}
     .slider .discount{
@@ -881,7 +886,7 @@ footer a,footer .contact span{
         margin-bottom: 0;
         display: block}
     nav .logo .loc{display: none}
-    nav .fa-bars{top: 9%;}
+    nav .fa-bars{top: 17%;}
     nav .logo h1{margin-bottom: 0}
     nav .links
     {
@@ -890,6 +895,7 @@ footer a,footer .contact span{
     }
     header a{font-size: 13px}
     .slider .center{width: 90%;}
+    .slider .text{width: 45%}
     .slider .discount{
         transform: scale(0.8) rotateZ(-4deg);
         margin-left: 4%;
@@ -949,6 +955,7 @@ footer a,footer .contact span{
 }
 @media (max-width: 555px){
     nav .links .search input{width: 80%}
+    .slider .text{width: 40%}
     .services h4{font-size: 15px}
     .services .box span{font-size: 13px}
     .register h3{font-size: 16px}
@@ -960,7 +967,7 @@ footer a,footer .contact span{
 @media (max-width: 500px){
     nav .logo {margin-left: 8px}
     .slider .text{width: 35%}
-    .slider .text p{font-weight: normal}
+    /*.slider .text p{font-weight: normal}*/
     .choose h2{font-size: 16px}
     .choose span{font-size: 11px}
     .services .box .img{height: 110px}
@@ -978,6 +985,7 @@ footer a,footer .contact span{
     /*.choose .flex{flex:none}*/
     .slider .text{width: 96%}
     .slider .discount{
+        transform: scale(0.6) rotateZ(-4deg);
         margin-top: -80px;
         margin-left: 30%}
     .services .box {
@@ -988,7 +996,12 @@ footer a,footer .contact span{
 
 }
 @media (max-width: 400px){
-    nav .fa-bars{top: 8%;}
+    nav .fa-bars{top: 24%;}
+    nav .info span{
+        margin-bottom: 2px;
+        font-size: 12px;
+        display: block}
+
     nav .links {width: 90%;}
     .offers .box{
         margin: 10px 10%;
@@ -1004,7 +1017,7 @@ footer a,footer .contact span{
         transform: scale(0.7)}
 }
 @media (max-width: 340px){
-    .slider .discount{ transform: scale(0.55) rotateZ(-4deg);}
+    .slider .discount{ transform: scale(0.6) rotateZ(-4deg);}
     .choose h2{font-size: 15px}
     .services .box {max-width:60%;}
     .register img {
@@ -1018,7 +1031,12 @@ footer a,footer .contact span{
     }
     .phones #more{left: 10%}
 }
+@media (max-width: 330px){
+    nav .fa-bars{top: 21%;}}
 @media (max-width: 320px){
-    .slider .discount{margin-left: 20%}
+    .slider .discount{
+        transform: scale(0.5) rotateZ(-4deg);
+        margin-top: -35px;
+        margin-left: 20%}
 
 }
